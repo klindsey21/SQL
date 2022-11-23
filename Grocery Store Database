@@ -1,0 +1,48 @@
+CREATE TABLE kl_store (id INTEGER PRIMARY KEY, clothing_item TEXT, price INTEGER, quantity INTEGER, rating INTEGER);
+
+INSERT INTO kl_store VALUES (1, "red shirt", 30, 200, 5);
+INSERT INTO kl_store VALUES (2, 'skirt', 25, 270, 4);
+INSERT INTO kl_store VALUES (3, "blue shorts", 55, 265, 5);
+INSERT INTO kl_store VALUES (4, 'green shorts', 55, 200, 5);
+INSERT INTO kl_store VALUES (5, 'purple shirt', 30, 175, 3);
+INSERT INTO kl_store VALUES (6, 'yellow shirt', 30, 170, 3);
+INSERT INTO kl_store VALUES (7, 'jeans', 70, 100, 5);
+INSERT INTO kl_store VALUES (8, 'white jeans', 70, 105, 5);
+INSERT INTO kl_store VALUES (9, 'black pants', 60, 103, 4);
+INSERT INTO kl_store VALUES (10, 'grey sweater', 45, 200, 5);
+INSERT INTO kl_store VALUES (11, 'black sweater', 45, 169,3);
+INSERT INTO kl_store VALUES (12, 'blue shorts', 55, 75, 5);
+INSERT INTO kl_store VALUES (13, 'black skirt', 25, 150, 4);
+INSERT INTO kl_store VALUES (14, 'black jeans', 70, 100, 5);
+INSERT INTO kl_store VALUES (15, 'red sweeater', 45, 85, 5);
+
+SELECT * FROM kl_store ORDER BY price;
+SELECT MAX(price) FROM kl_store;
+SELECT MIN(rating) FROM kl_store;
+
+DATABASE SCHEMA
+kl_store15 rows
+id (PK)INTEGER
+clothing_itemTEXT
+priceINTEGER
+quantityINTEGER
+ratingINTEGER
+QUERY RESULTS
+id	clothing_item	price	quantity	rating
+2	skirt	25	270	4
+13	black skirt	25	150	4
+1	red shirt	30	200	5
+5	purple shirt	30	175	3
+6	yellow shirt	30	170	3
+10	grey sweater	45	200	5
+11	black sweater	45	169	3
+15	red sweeater	45	85	5
+3	blue shorts	55	265	5
+4	green shorts	55	200	5
+12	blue shorts	55	75	5
+9	black pants	60	103	4
+7	jeans	70	100	5
+8	white jeans	70	105	5
+14	black jeans	70	100	5
+MAX(price)
+70
